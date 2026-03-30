@@ -205,7 +205,7 @@ CREATE TABLE `sliders` (
 
 -- Admin kullanici (sifre: Admin123!)
 INSERT INTO `users` (`first_name`, `last_name`, `email`, `password`, `phone`, `role`, `email_verified`, `country`) VALUES
-('Admin', 'User', 'admin@techstore.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', '5551234567', 'admin', 1, 'Turkiye');
+('Admin', 'User', 'admin@techstore.com', '$2y$10$QOr276UmUjXNlE0Cpe4zCect5uU33tuNLeH1Ll/GqLMc2CTSLv7Ti', '5551234567', 'admin', 1, 'Turkiye');
 
 -- Varsayilan markalar
 INSERT INTO `brands` (`name`, `slug`, `logo`, `is_active`) VALUES
