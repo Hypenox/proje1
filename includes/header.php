@@ -92,9 +92,7 @@ $brands = $db->query("SELECT * FROM brands WHERE is_active = 1 ORDER BY name")->
                     <a href="<?= SITE_URL ?>/cart.php" class="action-btn cart-btn">
                         <i class="fas fa-shopping-cart"></i>
                         <span>Sepetim</span>
-                        <?php if ($cartCount > 0): ?>
-                            <span class="cart-badge" id="cartBadge"><?= $cartCount ?></span>
-                        <?php endif; ?>
+                        <span class="cart-badge" id="cartBadge" style="<?= $cartCount > 0 ? '' : 'display:none' ?>"><?= $cartCount ?></span>
                     </a>
 
                     <button class="mobile-menu-btn" id="mobileMenuBtn">
