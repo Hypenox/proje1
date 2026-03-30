@@ -129,6 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.tab-btn').forEach(function(btn) {
         btn.addEventListener('click', function() {
             var target = this.getAttribute('data-tab');
+            if (!target) return; // skip if no data-tab (inline handler used)
             document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
             document.querySelectorAll('.tab-pane').forEach(function(p) { p.classList.remove('active'); });
             this.classList.add('active');
