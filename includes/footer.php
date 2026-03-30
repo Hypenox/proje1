@@ -93,6 +93,7 @@
         <i class="fas fa-chevron-up"></i>
     </button>
 
+    <script>var SITE_URL = '<?= SITE_URL ?>';</script>
     <script src="<?= SITE_URL ?>/assets/js/main.js"></script>
 </body>
 </html>
