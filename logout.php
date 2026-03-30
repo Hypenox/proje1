@@ -1,0 +1,7 @@
+<?php
+/**
+ * Cikis
+ */
+require_once __DIR__ . '/includes/auth.php';
+initSession();
+logoutUser();
